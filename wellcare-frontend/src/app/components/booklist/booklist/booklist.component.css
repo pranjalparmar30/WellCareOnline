@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #333;
+    margin: 0;
+}
+
+#search {
+    padding: 5px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 20px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.cell-size {
+    width: 100px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.cell-size1 {
+    width: 100px;
+    height: 20px;
+    border-right: 1px;
+}
+
+.cell-size2 {
+    width: 285px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.cell-size3 {
+    width: 400px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.cell-size4 {
+    width: 580px;
+    height: 20px;
+    border: 1px solid black;
+}

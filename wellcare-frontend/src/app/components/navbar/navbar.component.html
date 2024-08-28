@@ -1,0 +1,17 @@
+<nav>
+  <ul>
+    <li *ngIf="showlogin"><a [routerLink]="['/login']">Login</a></li>
+    <li><a [routerLink]="['/registration']">Registration</a></li>
+    <li><a [routerLink]="['/book/add']">Add Book</a></li>
+    <li><a [routerLink]="['/book/details']">Book Details</a></li>
+    <li><a [routerLink]="['/book']">Book List</a></li>
+    <li *ngIf="showTransaction"><a [routerLink]="['/transaction']">Transaction</a></li>
+    <li><a [routerLink]="['/book/comparison']">Comparison</a></li>
+  </ul>
+  <div style="display: flex;">
+    <p *ngIf="username">Welcome, {{ username }}!</p>
+    <p *ngIf="remainingTime">{{ remainingTime }} Minutes Till Logout</p>
+    <button *ngIf="remainingTime" (click)="logout()">Logout</button>
+    <input *ngIf="remainingTime" type="text" (input)="onSearch($event)" placeholder="Search User" />
+  </div>
+</nav>

@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<h1>Comparison Page</h1>
+<fieldset>
+    <table>
+        <thead>
+            <tr>
+                <th *ngFor="let book of comparisonBooks">Title: {{ book?.title }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">Author: {{ book?.author }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">ISBN: {{ book?.isbn }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">Published Date: {{ book?.publishedDate }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">Genre: {{ book?.genre }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">No. of Pages: {{ book?.numberOfPages }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">Description: {{ book?.description }}</td>
+            </tr>
+            <tr>
+                <td *ngFor="let book of comparisonBooks">Availability: {{ book?.availability ? 'Yes' : 'No' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</fieldset>

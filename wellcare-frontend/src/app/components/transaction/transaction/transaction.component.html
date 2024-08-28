@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+<h1>Transaction Page</h1>
+<fieldset>
+    <h3>List of Borrowed Books:</h3>
+    <form>
+        <label for="date">Select Date: </label>
+        <input type="date" id="date" name="date" [(ngModel)]="filterCriteria.date"
+            (ngModelChange)="onFilterChange()"><br><br>
+
+        <label for="username">Select Username: </label>
+        <input type="text" id="username" name="username" [(ngModel)]="filterCriteria.username"
+            (ngModelChange)="onFilterChange()"><br><br>
+
+        <label for="title">Select Title: </label>
+        <input type="text" id="title" name="title" [(ngModel)]="filterCriteria.title"
+            (ngModelChange)="onFilterChange()"><br><br>
+        <label for="debounce">Debounce API: </label>
+        <input type="text" id="debounce" name="debounce" (input)="onInput($event)"><br><br>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let i of filteredData | paginate: { itemsPerPage: 5, currentPage: page }">
+                <tr>
+                    <td>{{i?.title}}</td>
+                    <td>{{i?.author}}</td>
+                    <td>{{i?.userName}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    <button type="button" (click)="exportData()" style="margin-top: 50px;">Export Data</button>
+</fieldset>
+
+<fieldset style="margin-top: 50px;">
+    <h3>List Of Returned Book: </h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let i of returnedData | paginate: { itemsPerPage: 5, currentPage: pageNew }">
+                <tr>
+                    <td>{{i?.title}}</td>
+                    <td>{{i?.author}}</td>
+                    <td>{{i?.userName}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+
+    <pagination-controls (pageChange)="pageNew = $event"></pagination-controls>
+
+    <button type="button" (click)="exportDataReturned()" style="margin-top: 50px;">Export Data</button>
+</fieldset>

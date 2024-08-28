@@ -1,0 +1,379 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "manender",
+      "password": "password",
+      "email": "",
+      "dob": "",
+      "role": "User",
+      "rememberMe": true,
+      "darkMode": true,
+      "expiryTime": "2024-05-23T12:25:44.596Z"
+    },
+    {
+      "id": "2",
+      "username": "megha",
+      "password": "password",
+      "email": "",
+      "dob": "",
+      "role": "User",
+      "rememberMe": false,
+      "darkMode": false,
+      "expiryTime": "2024-05-30T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "username": "admin",
+      "password": "password",
+      "email": "",
+      "dob": "",
+      "role": "Admin",
+      "rememberMe": true,
+      "darkMode": false,
+      "expiryTime": "2024-05-23T12:28:06.684Z"
+    },
+    {
+      "id": "678f",
+      "username": "user1",
+      "email": "user1@gmail.com",
+      "password": "password",
+      "dob": "2024-05-23",
+      "role": "User",
+      "rememberMe": false,
+      "darkMode": false,
+      "expiryTime": "2024-05-22T09:30:18.841Z"
+    },
+    {
+      "id": "e260",
+      "username": "haha",
+      "email": "manender.bamel@cubastion.net",
+      "password": "ah",
+      "dob": "2024-05-01",
+      "role": "Admin",
+      "rememberMe": false,
+      "darkMode": false,
+      "expiryTime": "2024-05-22T09:46:42.914Z"
+    },
+    {
+      "id": "20b0",
+      "username": "testing",
+      "email": "testing@cubasio.com",
+      "password": "12345678",
+      "dob": "2004-01-02",
+      "role": "Admin",
+      "rememberMe": false,
+      "darkMode": false,
+      "expiryTime": "2024-05-22T09:56:18.479Z"
+    }
+  ],
+  "borrowed": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "userName": "user1",
+      "updatedAt": "2024-05-22T10:30:00"
+    },
+    {
+      "id": "2",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "userName": "user2",
+      "updatedAt": "2024-05-21T14:00:00"
+    },
+    {
+      "id": "3",
+      "title": "1984",
+      "author": "George Orwell",
+      "userName": "user3",
+      "updatedAt": "2024-05-20T09:15:00"
+    },
+    {
+      "id": "4",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "userName": "user4",
+      "updatedAt": "2024-05-19T17:45:00"
+    },
+    {
+      "id": "5",
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "userName": "user5",
+      "updatedAt": "2024-05-18T08:20:00"
+    },
+    {
+      "id": "6",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "userName": "user6",
+      "updatedAt": "2024-05-17T13:35:00"
+    },
+    {
+      "id": "7",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "userName": "user7",
+      "updatedAt": "2024-05-16T11:10:00"
+    },
+    {
+      "id": "8",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "userName": "user8",
+      "updatedAt": "2024-05-15T15:25:00"
+    },
+    {
+      "id": "9",
+      "title": "The Odyssey",
+      "author": "Homer",
+      "userName": "user9",
+      "updatedAt": "2024-05-14T16:50:00"
+    },
+    {
+      "id": "10",
+      "title": "Ulysses",
+      "author": "James Joyce",
+      "userName": "user10",
+      "updatedAt": "2024-05-13T19:30:00"
+    }
+  ],
+  "returned": [
+    {
+      "id": "1",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "userName": "user11",
+      "updatedAt": "2024-05-25T09:30:00"
+    },
+    {
+      "id": "2",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "userName": "user12",
+      "updatedAt": "2024-05-24T13:00:00"
+    },
+    {
+      "id": "3",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "userName": "user13",
+      "updatedAt": "2024-05-23T10:45:00"
+    },
+    {
+      "id": "4",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "userName": "user14",
+      "updatedAt": "2024-05-22T15:20:00"
+    },
+    {
+      "id": "5",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "userName": "user15",
+      "updatedAt": "2024-05-21T11:55:00"
+    },
+    {
+      "id": "6",
+      "title": "The Alchemist2",
+      "author": "Paulo Coelho2",
+      "userName": "user16",
+      "updatedAt": "2024-05-21T11:55:00"
+    }
+  ],
+  "books": [
+    {
+      "id": "1",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "availability": true,
+      "isbn": "9780061120084",
+      "publishedDate": "1960-07-11",
+      "genre": "Fiction",
+      "numberOfPages": 281,
+      "description": "A novel about the serious issues of rape and racial inequality."
+    },
+    {
+      "order": "2",
+      "title": "1984",
+      "author": "George Orwell",
+      "availability": false,
+      "isbn": "9780451524935",
+      "publishedDate": "1949-06-08",
+      "genre": "Dystopian",
+      "numberOfPages": "369",
+      "description": "A dystopian social science fiction novel and cautionary tale about the future.",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "order": "3",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "availability": true,
+      "isbn": "9780743273565",
+      "publishedDate": "1925-04-10",
+      "genre": "Fiction",
+      "numberOfPages": 180,
+      "description": "A story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
+    },
+    {
+      "id": "4",
+      "order": "4",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "availability": true,
+      "isbn": "9780316769488",
+      "publishedDate": "1951-07-16",
+      "genre": "Fiction",
+      "numberOfPages": 214,
+      "description": "A novel about a teenager's experiences in New York City after being expelled from school."
+    },
+    {
+      "id": "5",
+      "order": "5",
+      "title": "Brave New World",
+      "author": "Aldous Huxley",
+      "availability": false,
+      "isbn": "9780060850524",
+      "publishedDate": "1932-08-31",
+      "genre": "Dystopian",
+      "numberOfPages": 268,
+      "description": "A dystopian novel set in a futuristic World State, where citizens are environmentally engineered into an intelligence-based social hierarchy."
+    },
+    {
+      "id": "6",
+      "order": "6",
+      "title": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "availability": true,
+      "isbn": "9780618640157",
+      "publishedDate": "1954-07-29",
+      "genre": "Fantasy",
+      "numberOfPages": 1178,
+      "description": "An epic high-fantasy novel written by English author and scholar J.R.R. Tolkien."
+    },
+    {
+      "id": "7",
+      "order": "7",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "availability": false,
+      "isbn": "9780141040349",
+      "publishedDate": "1813-01-28",
+      "genre": "Romance",
+      "numberOfPages": 279,
+      "description": "A romantic novel of manners written by Jane Austen."
+    },
+    {
+      "id": "8",
+      "order": "8",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "availability": true,
+      "isbn": "9780061120084",
+      "publishedDate": "1960-07-11",
+      "genre": "Fiction",
+      "numberOfPages": 281,
+      "description": "A novel about the serious issues of rape and racial inequality."
+    },
+    {
+      "id": "9",
+      "order": "9",
+      "title": "Animal Farm",
+      "author": "George Orwell",
+      "availability": true,
+      "isbn": "9780451526342",
+      "publishedDate": "1945-08-17",
+      "genre": "Political Satire",
+      "numberOfPages": 112,
+      "description": "A satirical tale set on a farm that uses animals to critique political events."
+    },
+    {
+      "id": "10",
+      "order": "10",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "availability": false,
+      "isbn": "9780316769488",
+      "publishedDate": "1951-07-16",
+      "genre": "Fiction",
+      "numberOfPages": 214,
+      "description": "A novel about a teenager's experiences in New York City after being expelled from school."
+    },
+    {
+      "id": "11",
+      "order": "11",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "availability": true,
+      "isbn": "9780345339683",
+      "publishedDate": "1937-09-21",
+      "genre": "Fantasy",
+      "numberOfPages": 310,
+      "description": "A fantasy novel and children's book by English author J.R.R. Tolkien."
+    },
+    {
+      "id": "12",
+      "order": "12",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "availability": true,
+      "isbn": "9780061122415",
+      "publishedDate": "1988-05-01",
+      "genre": "Quest",
+      "numberOfPages": 208,
+      "description": "A novel that tells the story of a young shepherd named Santiago and his journey to Egypt."
+    },
+    {
+      "id": "13",
+      "order": "13",
+      "title": "The Da Vinci Code",
+      "author": "Dan Brown",
+      "availability": false,
+      "isbn": "9780385504201",
+      "publishedDate": "2003-03-18",
+      "genre": "Thriller",
+      "numberOfPages": 689,
+      "description": "A mystery thriller novel that follows symbologist Robert Langdon and cryptologist Sophie Neveu."
+    },
+    {
+      "id": "14",
+      "order": "14",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "availability": true,
+      "isbn": "9780747532743",
+      "publishedDate": "1997-06-26",
+      "genre": "Fantasy",
+      "numberOfPages": 223,
+      "description": "The first novel in the Harry Potter series, following Harry's first year at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "id": "15",
+      "order": "15",
+      "title": "The Hunger Games",
+      "author": "Suzanne Collins",
+      "availability": true,
+      "isbn": "9780439023528",
+      "publishedDate": "2008-09-14",
+      "genre": "Dystopian",
+      "numberOfPages": 374,
+      "description": "A dystopian novel set in a future where the government forces children to participate in a deadly game."
+    },
+    {
+      "id": "5e84",
+      "order": 997,
+      "title": "Manender",
+      "author": "Manender",
+      "availability": true,
+      "isbn": "123",
+      "publishedDate": "2024-05-16",
+      "genre": "Nice",
+      "numberOfPages": "120",
+      "description": "Good morning"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div class="header">
+    <h1>Book List Page</h1>
+    <input type="text" placeholder="Search..." id="search" [(ngModel)]="searchText">
+</div>
+<div class="table-container" infiniteScroll [scrollWindow]="false" [infiniteScrollDistance]="1" (scrolled)="onScroll()">
+    <table class="compare-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+            <tr *ngFor="let book of books | search: searchText" cdkDrag appRightclick (rightClickEvent)="onRightClick(book)">
+                <td class="cell-size1">
+                    <input type="checkbox" name="compare1" (change)="toggleSelection(book, $event)">
+                </td>
+                <td class="cell-size2">{{ book.title }}</td>
+                <td class="cell-size3">{{ book.author }}</td>
+                <td class="cell-size4">{{ book.availability ? 'Yes' : 'No' }}
+                    <button *ngIf="userRole === 'Admin'" (click)="editBook(book)">Edit</button>&nbsp;
+                    <button *ngIf="userRole === 'Admin'" (click)="deleteBook(book)">Delete</button>&nbsp;
+                    <button *ngIf="userRole === 'User'" (click)="borrowBook(book)">Borrow</button>&nbsp;
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<button type="button" (click)="onCompare()">Compare</button>

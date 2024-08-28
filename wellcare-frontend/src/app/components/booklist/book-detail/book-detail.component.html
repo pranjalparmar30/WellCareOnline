@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+<h1>Book Details Page</h1>
+<p>Please fill out this form with the required information</p>
+<form [formGroup]="bookForm" (submit)="onSubmit()">
+  <fieldset>
+    <label for="title">Title: <input id="title" formControlName="title" type="text" required /></label>
+    <label for="author">Author: <input id="author" formControlName="author" type="text" required /></label>
+    <label for="isbn">ISBN: <input id="isbn" formControlName="isbn" type="text" required /></label>
+    <label for="publish-date">Published Date: <input id="publish-date" formControlName="publishedDate" type="date"
+        required /></label>
+    <label for="genre">Genre: <input id="genre" formControlName="genre" type="text" required /></label>
+    <label for="pages">No. of Pages: <input id="pages" formControlName="numberOfPages" type="text" required /></label>
+    <label for="description">Description:
+      <textarea id="description" formControlName="description" rows="3" cols="30" placeholder="..."></textarea>
+    </label>
+    <label for="availability">Availability:</label>
+    <label for="true">
+      <input id="true" type="radio" formControlName="availability" [value]="true" class="inline" /> Yes
+    </label>
+    <label for="false">
+      <input id="false" type="radio" formControlName="availability" [value]="false" class="inline" /> No
+    </label>
+  </fieldset>
+  <input class="edit" type="submit" value="Edit" />
+  <input class="delete" type="submit" value="Delete" />
+  <input class="borrow" type="submit" value="Borrow" />
+  <input class="return" type="submit" value="Return" />
+</form>

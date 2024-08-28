@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<h1>Login Page</h1>
+<p>Enter Login information</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <fieldset>
+    <label for="username">Username:
+      <input id="username" formControlName="username" type="text" required />
+    </label>
+    <label for="new-password">Password:
+      <input id="new-password" formControlName="password" type="password" required />
+    </label>
+  </fieldset>
+  <label for="dark-mode">
+    <input class="inline" id="dark-mode" formControlName="darkMode" type="checkbox" (change)="onToggle()" /> Dark Mode
+  </label>
+  <label for="terms-and-conditions">
+    <input id="terms-and-conditions" class="inline" formControlName="rememberMe" type="checkbox" /> Remember Me
+  </label>
+  <button type="submit" class="buttonnn" [disabled]="loginForm.invalid">Submit</button>
+  <button type="button" class="buttonnn" (click)="onRegister()">Register</button>
+</form>

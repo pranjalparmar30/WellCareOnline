@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+<h1>Registration Page</h1>
+<p>Please fill out this form with the required information</p>
+<form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <fieldset>
+        <label for="username">Username: <input formControlName="username" type="text" required /></label>
+        <label for="email">Email: <input formControlName="email" type="email" (blur)="onEmailInput($event)"
+                required /></label>
+        <label for="new-password">Password: <input formControlName="password" type="password" required /></label>
+        <div *ngIf="registrationForm.get('password')?.errors?.['weakPassword']">Password must have at least 8 characters</div>
+        <label for="confirm-password">Confirm Password: <input formControlName="confirmPassword" type="password"
+                required /></label>
+        <p *ngIf="registrationForm.hasError('passwordMismatch')">
+            Password and Confirm Password must match.
+        </p>
+        <label for="dob">Date of Birth: <input formControlName="dob" type="date" required /></label><br>
+        <div *ngIf="registrationForm.get('dob')?.errors?.['underage']">Must be at least 14 years old</div>
+        <label for="availability">Role Type:</label>
+        <label for="admin"><input id="admin" formControlName="role" type="radio" value="Admin" class="inline" />
+            Admin</label>
+        <label for="user"><input id="user" formControlName="role" type="radio" value="User" class="inline" checked />
+            User</label>
+    </fieldset>
+    <input class="submit" type="submit" value="Submit" />
+    <button class="buttonnn" type="button" (click)="goToLogin()">Go To Login</button>
+</form>
